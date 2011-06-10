@@ -11,6 +11,9 @@ export PATH="$HOME/bin:$PATH"
 source /Users/tatic/bin/.git-completion.sh
 PS1='\n[\u] \[\033[1;33m\]\w\a\[\033[0m\]$(__git_ps1 " \[\033[1;32m\](%s)\[\033[0m\]")\n\$ '
 
+# Printa versão rvm-ruby e rvm-gemset-name
+PS1="Vc esta usando:\$(~/.rvm/bin/rvm-prompt) $PS1"
+
 # Fim git-completion explanation
 
 alias rload="source /Users/tatic/.bash_profile"
@@ -18,13 +21,16 @@ alias rload="source /Users/tatic/.bash_profile"
 # Projetos
 
 alias drop.mi.projects="cd ~/Dropbox/mi_projects/"
-alias cab="cd ~/Dropbox/mi_projects/github/cab-with-me"
+alias github="cd ~/Dropbox/mi_projects/github"
+alias cab="cd ~/Dropbox/mi_projects/github/cab-with-me;rvm gemset use rails3.0.7"
 
 # Git
 
 alias gitco="git commit -m"
 alias gitcoa="git commit -a -m"
 alias gitck="git checkout"
+
+# Need lighttpd => http://redmine.lighttpd.net/
 alias gitweb="git instaweb"
 
 # Cria branch e muda para ele
