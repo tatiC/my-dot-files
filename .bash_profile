@@ -31,6 +31,7 @@ alias gitcoa="git commit -a -m"
 alias gitck="git checkout"
 
 # Need lighttpd => http://redmine.lighttpd.net/
+# http://hivelogic.com/articles/ruby_rails_lighttpd_mysql_tiger/
 alias gitweb="git instaweb"
 
 # Cria branch e muda para ele
