@@ -1,4 +1,4 @@
-ZombiesPlayground::Application.routes.draw do
+TheProject::Application.routes.draw do
   
   root :to => "welcome#index"
 
