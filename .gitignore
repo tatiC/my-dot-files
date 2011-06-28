@@ -1,6 +1,15 @@
 .DS_Store
+.gitignore
+*.log
+*.swp
+*~
+*.sqlite3
 .bundle
+db/schema.rb
 db/*.sqlite3
+log/*
 log/*.log
 tmp/
-doc/*.*
+tmp/*
+tmp/**/* 
+public/uploads/
